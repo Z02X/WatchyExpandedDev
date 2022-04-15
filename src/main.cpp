@@ -1,9 +1,11 @@
-#include <Arduino.h>
+// Expanded
+#include <WatchyExpanded.h>
 
-void setup() {
-  // put your setup code here, to run once:
+void setup()
+{
+  // After each deep sleep this gets run
+  CWatchyExpanded watch;
+  watch.Run();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop() {}
