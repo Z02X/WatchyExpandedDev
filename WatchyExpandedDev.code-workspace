@@ -10,6 +10,9 @@
 			"path": ".pio\\libdeps\\WatchyExpandedDev\\WatchyWiFiSetup"
 		},
 		{
+			"path": ".pio\\libdeps\\WatchyExpandedDev\\WatchExpandedWatchFaces"
+		},
+		{
 			"path": "."
 		}
 	],
