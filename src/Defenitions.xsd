@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+	<xs:element name="WatchFace">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="item" type="item" minOccurs = "1" maxOccurs = "unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name = "position">
+		<xs:attribute name = "x" type = "xs:positiveInteger" use="required"/>
+		<xs:attribute name = "y" type = "xs:positiveInteger" use="required"/>
+	</xs:complexType>
+
+	<!-- REST is not finished being planned yet -->
+	<xs:complexType name = "REST">
+		<xs:attribute name = "url" type = "xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name = "item">
+		<xs:sequence>
+			<xs:element name="position" type="position" minOccurs = "1" maxOccurs="1"/>
+			<xs:element name="datetime" type="xs:string" minOccurs = "0" maxOccurs="1"/>
+			<xs:element name="icon" type="xs:base64Binary" minOccurs = "0" maxOccurs="1"/>
+			<!--<xs:element name="fontName" type="xs:string" minOccurs = "0" maxOccurs="1"/>-->
+			<!--<xs:element name="REST" type="REST" minOccurs = "0" maxOccurs="1"/>-->
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

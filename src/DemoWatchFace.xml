@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace xsi:noNamespaceSchemaLocation="Defenitions.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<item>
+		<position x="15" y="15"/>
+		<datetime>%a %b %d, %Y</datetime>
+	</item>
+</WatchFace>
